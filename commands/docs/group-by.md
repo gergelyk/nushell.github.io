@@ -18,10 +18,6 @@ usage: |
 
 ```> group-by {flags} (grouper)```
 
-## Flags
-
- -  `--to-table, -`: Return a table with "groups" and "items" columns
-
 ## Parameters
 
  -  `grouper`: the path to the column to group on
@@ -83,7 +79,7 @@ You can also group by raw values by leaving out the argument
 
 You can also output a table instead of a record
 ```nu
-> ['1' '3' '1' '3' '2' '1' '1'] | group-by --to-table
+> ['1' '3' '1' '3' '2' '1' '1'] | group-by
 ╭───┬───────┬───────────╮
 │ # │ group │   items   │
 ├───┼───────┼───────────┤
