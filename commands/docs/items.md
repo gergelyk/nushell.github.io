@@ -33,7 +33,7 @@ usage: |
 
 Iterate over each key-value pair of a record
 ```nu
-> { new: york, san: francisco } | items {|key, value| echo $'($key) ($value)' }
+> { new: york, san: francisco } | items {|key, value| $'($key) ($value)' }
 ╭───┬───────────────╮
 │ 0 │ new york      │
 │ 1 │ san francisco │
